@@ -1,51 +1,3 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Tapestry&display=swap');
-*{
-    margin: 0;
-    padding: 0%;
-    box-sizing: border-box;
-}
-
-body{
-    font-family: 'Tapestry',
-    cursive;
-    
-}
-.container{
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 30px;
-}
-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 80px;
-}
-header{
-    height: 100vh;
-    background-image: url(../images/cloud.png);
-    background-repeat: repeat;
-    background-size: cover;
-    background-color: rgba(0, 0,0, .4);
-    background-blend-mode: overlay;
-}
-.navigation{
-    display: flex;
-    
-}
-.navigation li{
-    list-style: none;
-    margin: 10px;
-}
-.navigation li a{
-    
-    
-    text-decoration: none;
-    color: aliceblue;
-    font-weight: 600;
-    padding: 15px 10px;
-    
-} */
 @import url('https://fonts.googleapis.com/css2?family=Oswald&family=Tapestry&display=swap');
 
 body{
@@ -92,7 +44,7 @@ margin: 10px;
 color: aliceblue;
     padding: 15px 10px;
 }
-
+/* banner total */
 .banner{
     height: calc(100vh-80px);
     display: grid;
@@ -104,37 +56,74 @@ flex-direction: column;
     justify-content: center;
     align-items: flex-start;
 }
+/* banner left  */
+.banner-left h1{
+    font-size: 45px;
+    color: #f9fefa;
+}
+
 
 .banner-right{
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+/* span tag class */
+.highlight{
+    color: #ef85a8fa;
+}
+.section-title{
+    text-align: center;
+}
+/* common section title */
+.section-title h2{
+    font-size: 40px;
+    display: inline-block;
+    text-transform: uppercase;
+   border-bottom: 2px solid #c43464fa;
+    margin: 50px 0;
 }
 
 .paragraph{
     color: bisque;
+    font-size: 18px;
+    margin: 18px 0;
+}
+/* button css */
+.gradient-button{
+outline: 0;
+border: 0;
+padding: 15px 20px;
+background-image: linear-gradient(90deg,#c21273,#FF008E);
+color: #ffff;
+font-size: 18px;
+text-transform: uppercase;
+border-radius: 5px;
+cursor: pointer;
+box-shadow: 0 7px 0 #c5075e;
+position: relative;
+top: 0;
 }
 
-.gradient-button {
-    margin: 10px;
-    font-family: "Arial Black", Gadget, sans-serif;
-    font-size: 20px;
-    padding: 15px;
-    text-align: center;
-    text-transform: uppercase;
-    transition: 0.5s;
-    background-size: 200% auto;
-    color: #f9fefa;
-background-image: linear-gradient(to right, #DD5E89 0%, #F7BB97 51%, #DD5E89 100%);
-    box-shadow: 0 0 20px rgba(238, 238, 238, 0.822);
-    border-radius: 10px;
-    width: 200px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
-    cursor: pointer;
-    display: inline-block;
-    border-radius: 25px;
+.gradient-button:active{
+    top: 5px;
+    box-shadow: 0 2px 0 #c5075e;
+   
 }
+/* feature css */
+.feature{
+    display: grid;
+    gap: 20px;
+   grid-template-columns: 1fr 1fr;
+   justify-content: center;
 
-.gradient-button:hover {
-    box-shadow: 0 10px 20px rgba(201, 123, 123, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-    margin: 8px 10px 12px;
+}  
+
+/* card cc=ss */
+.card{
+    width: 300px;
+    padding: 30px;
+    margin: 0 auto;
+    box-shadow: 0 20px 25px rgba(0, 0, 0, .2);
 }
